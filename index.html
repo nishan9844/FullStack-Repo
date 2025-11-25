@@ -7,51 +7,65 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to Nishan's Portfolio</h1>
-        <p>Web Developer | Designer | Learner</p>
-    </header>
 
-    <nav>
-        <ul>
+<header id="hero">
+    <video autoplay loop muted id="video-background">
+        <source src="https://www.pexels.com/download/video/3151482/" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <nav class="navbar">
+        <span class="logo">Nishan</span>
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button class="menu-toggle" id="menu-button" aria-label="Toggle navigation">☰</button>
     </nav>
 
-    <section id="about">
-        <h2>About Nishan</h2>
-        <p>Hello! I'm Nishan, a passionate learner exploring web development and programming. I enjoy building clean, simple, and useful digital experiences.</p>
-    </section>
+    <div class="hero-content">
+        <h1>Hello, I'm Nishan</h1>
+        <p>Web Developer | Designer | Learner</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</header>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li>Project 1 - Coming soon...</li>
-            <li>Project 2 - Coming soon...</li>
-            <li>Project 3 - Coming soon...</li>
-        </ul>
-    </section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I’m Nishan, a passionate Web Developer and Designer with a keen interest in creating clean, responsive, and visually appealing websites. I love learning new technologies, experimenting with creative designs, and building projects that solve real problems. Always curious, always coding!</p>
+</section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+<section id="projects">
+    <h2>My Projects</h2>
+    <div id="projects-grid">
+        <div class="project-card">Project 1 - Coming soon…</div>
+        <div class="project-card">Project 2 - Coming soon…</div>
+        <div class="project-card">Project 3 - Coming soon…</div>
+    </div>
+</section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form-id">
+        <label>Name:</label>
+        <input type="text" id="name" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        <label>Email:</label>
+        <input type="email" id="email" required>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <label>Message:</label>
+        <textarea id="message" rows="5" required></textarea>
 
-    <footer>
-        <p>© 2025 Nishan | All Rights Reserved</p>
-    </footer>
+        <button type="submit">Send Message</button>
+    </form>
+    <div id="form-message"></div>
+</section>
+
+<footer>
+    <p>© 2025 Nishan | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
